@@ -78,8 +78,8 @@ module.exports = {
             passport.use(new FacebookStrategy({
                     clientID: "650836008320629",
                     clientSecret: "c38bd78898468eed2e114a65262420a3",
-                    callbackURL: "http://localhost:1337/auth/facebook/callback"
-                    //callbackURL: "http://www.latinparties.lu/auth/facebook/callback"
+                    //callbackURL: "http://localhost:1337/auth/facebook/callback"
+                    callbackURL: "http://www.latinparties.lu/auth/facebook/callback"
                 },
                 verifyHandler
             ));
