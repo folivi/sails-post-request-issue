@@ -1,0 +1,18 @@
+<div class="col-md-8 col-md-offset-2">
+<div class="panel panel-default">
+  <div class="panel-body">
+    <p>Select the events you want to manage <a class="pull-right btn btn-xs btn-info" href="/dashboard">Back to dashboard</a></p>
+    <p id="panel"></p>
+  </div>
+</div>
+	<table class="table table-bordered table-striped table-condensed">	
+	<% events.data.forEach(function(event){ %>		
+		
+			<tr  data-event-id= <%= event.eid %>>
+				<td><%= event.name %></td>
+				<td> <a href="#" class="add-to-dashboard btn btn-warning btn-xs" data-event-id=<%= event.eid %>>Add to dashboard</a> </td>
+			</tr>
+		
+	<% }) %>
+	</table>	
+</div>

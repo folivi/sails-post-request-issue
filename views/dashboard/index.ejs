@@ -1,0 +1,15 @@
+
+<ul class="list-group no-radius m-b-none m-t-n-xxs list-group-lg no-border">
+  <% events.forEach(function(event){ %>
+  	<li class="list-group-item" data-event-id="<%= event.id %>">
+    <a href="#" class="thumb-sm pull-left m-r-sm">
+      <img src="<%= event.pic_square %>" class="img-circle">
+    </a>
+    <a href="#" class="clear">
+      <small class="pull-right"><a class="btn btn-xs btn-danger" href="/remove/<%= event.id %>">Remove</a></small>
+      <strong class="block"><a href="/event/<%= event.id %>" class="modal-btn"><%= event.name %></a></strong>
+      <small><%= new Date(event.start_time).toFormat('DDDD, DD MMMM YYYY') %></small>
+    </a>
+  </li>
+  <% }) %>
+</ul>  

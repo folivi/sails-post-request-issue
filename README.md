@@ -1,0 +1,2 @@
+# eventz
+### a Sails application
