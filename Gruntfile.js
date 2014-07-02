@@ -456,7 +456,7 @@ module.exports = function (grunt) {
     'copy:dev',
     'coffee:dev',
     'concat',
-    'uglify',
+    //'uglify',
     'cssmin',
     'sails-linker:prodJs',
     'sails-linker:prodStyles',
